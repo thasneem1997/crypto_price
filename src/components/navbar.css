@@ -1,0 +1,50 @@
+.navbar-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1px solid gray;
+    padding: 24px;
+}
+
+.logo {
+    width: 200px;
+    margin-left: 46px;
+}
+
+.navbar-items {
+    display: flex;
+    margin-left: 232px;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    color: white;
+    list-style: none;
+}
+select{
+    
+    background: transparent;
+    border-radius: 3px;
+    border: 1px solid white;
+    color: white;
+    padding: 3px
+}
+
+.navbar-right {
+    margin-left: 331px;
+    display: flex;
+    gap: 14px;
+    justify-content: end;
+}
+.signup-btn{
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    margin-left: 6px;
+    gap: 7px;
+    border-radius: 22px;
+
+}
+option{
+    color: black;
+}
+
