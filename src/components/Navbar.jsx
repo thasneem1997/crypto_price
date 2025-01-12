@@ -3,6 +3,7 @@ import logo from "../assets/logo.png";
 import arrow_icon from "../assets/arrow_icon.png";
 import "./navbar.css";
 import { Appcontext } from "../context/Appcontext";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const { setcurrency } = useContext(Appcontext);
@@ -23,11 +24,16 @@ function Navbar() {
   };
   return (
     <div className="navbar-container">
-      <img src={logo} alt="logo" className="logo"></img>
+      <Link to={"/"}>
+        <img src={logo} alt="logo" className="logo"></img>
+      </Link>
       <ul className="navbar-items">
-        <li>
-          <a href="#">Home</a>
-        </li>
+        <Link to={"/"}>
+          <li>
+            <a href="#">Home</a>
+          </li>
+        </Link>
+
         <li>
           <a href="#">Features</a>
         </li>
@@ -39,13 +45,13 @@ function Navbar() {
         </li>
       </ul>
 
-      <div className="navbar-right">
-        <select onChange={handlecurrency}>
+      <div className="navbar-right ">
+        <select onChange={handlecurrency} className="text-white">
           <option value="USD">USD</option>
           <option value="EUR">EURO</option>
           <option value="INR">INR</option>
         </select>
-        <button className="signup-btn">
+        <button className="signup-btn bg-white ">
           signup
           <img src={arrow_icon} alt="arrow_icon"></img>
         </button>

@@ -48,3 +48,18 @@ option{
     color: black;
 }
 
+@media screen and (max-width: 768px) {
+    .navbar-right {
+        margin-left: -502px;}
+        .logo {
+            width: 161px;
+            margin-left: -12px;
+        }
+        .navbar-items{
+            display: none;
+        }
+       
+
+}
+    
+
